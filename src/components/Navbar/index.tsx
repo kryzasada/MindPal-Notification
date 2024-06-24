@@ -1,19 +1,35 @@
 import { Link } from "react-router-dom"
-import { useSelector } from "react-redux"
-import { selectCount } from "@selectors/notifications"
+import { useLocation } from 'react-router-dom'
+import cn from "classnames"
 import "./Navbar.sass"
 
-const Navbar = () => {
-  const selector = useSelector(selectCount)
+const Navbar = ({
+  items
+}: NavbarProps) => {
+  const { pathname } = useLocation();
 
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/Contact">Contact</Link>
-      <Link to="/About">About</Link>
-      {selector}
+      {
+        items.map((item) =>
+          <Link
+            className={cn("navbar__link", { "current": pathname === item.path })}
+            to={item.path}>
+            {item.name}
+          </Link>
+        )
+      }
     </nav>
   )
 }
 
 export default Navbar
+
+interface item {
+  name: string,
+  path: string
+}
+
+interface NavbarProps {
+  items: item[]
+}

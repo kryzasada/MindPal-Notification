@@ -1,9 +1,22 @@
 @import "@styles"
 
 .navbar
-  width: 90%
-  height: 120px
-  background-color: red
+  &__link
+    padding: 0 20px
+    font-weight: 500
+    color: #1c1e21
+    font-size: 17px
+    text-decoration: none
 
-  +s
-    background-color: blue !important
+    &:first-child
+      padding-left: 0
+
+    &:last-child
+      padding-right: 0
+
+    &:hover:not(.current)
+      color: #ff5875
+
+    &.current
+      text-decoration: underline
+      cursor: default
