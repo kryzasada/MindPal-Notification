@@ -21,7 +21,21 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Custom */
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@components": ["./src/components"],
+      "@styles/*": ["./src/styles/*"],
+      "@pages": ["./src/pages/index.ts"],
+      "@reducers/*": ["./src/store/reducers/*"],
+      "@selectors/*": ["./src/store/selectors/*"],
+      "@store": ["./src/store/store.ts"],
+      "@actions/*": ["./src/store/actions/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@layout/*": ["./src/layout/*"],
+    }
   },
   "include": ["src"]
 }
