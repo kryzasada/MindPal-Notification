@@ -11,8 +11,9 @@ const Navbar = ({
   return (
     <nav className="navbar">
       {
-        items.map((item) =>
+        items.map(item =>
           <Link
+            key={item.name}
             className={cn("navbar__link", { "current": pathname === item.path })}
             to={item.path}>
             {item.name}
@@ -25,11 +26,11 @@ const Navbar = ({
 
 export default Navbar
 
-interface item {
+interface NavbarItem {
   name: string,
   path: string
 }
 
 interface NavbarProps {
-  items: item[]
+  items: NavbarItem[]
 }

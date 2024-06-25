@@ -1,15 +1,13 @@
 import Navbar from "@components/Navbar"
-import Notification from "@components/Notification"
+import NotificationPanel from "@components/NotificationPanel"
 import "./Header.sass"
 
 const Header = () => {
-  // const dispatch = useDispatch()
-
   return (
     <header className="header">
       <div className="header__content">
         <Navbar items={data} />
-        <Notification />
+        <NotificationPanel />
       </div>
     </header>
   )

@@ -1,0 +1,27 @@
+.custom-inputs
+  display: flex
+  border: 1px solid #dcdcdc
+  border-radius: 10px
+  overflow: hidden
+  font-size: 14px
+
+  .input-item
+    flex: 1
+    text-align: center
+    padding: 8px 5px
+    cursor: pointer
+    border-right: 1px solid #dcdcdc
+
+    &:last-child
+      border-right: none
+
+    &.selected
+      background-color: #f0f0f5
+      color: #4c51bf
+
+    &:not(.selected)
+      background-color: #ffffff
+      color: #4a4a4a
+
+    input
+      display: none

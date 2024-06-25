@@ -1,0 +1,30 @@
+.radio-button
+  display: flex
+  gap: 15px
+
+  &__label
+    height: 24px
+    width: max-content
+    margin: 0
+    padding: 4px 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    bottom: 0
+
+    font-size: 15px
+    background-color: lightgray
+    color: black
+    border-radius: 20px
+    border: 1px solid white
+    cursor: pointer
+    font-weight: 500
+
+    &--checked
+      background: white
+      border: 1px solid lightgray
+      color: #3b82f6
+
+  &__input
+    display: none
