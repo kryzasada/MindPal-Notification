@@ -2,6 +2,8 @@
 
 Recruitment Task
 
+[Demo](https://mindpal-notification.vercel.app/)
+
 ## Technologies
 
 
