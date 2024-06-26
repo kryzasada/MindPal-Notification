@@ -1,3 +1,5 @@
+@import "@styles"
+
 .radio-button
   display: flex
   gap: 15px
@@ -12,19 +14,20 @@
     justify-content: center
     position: relative
     bottom: 0
-
     font-size: 15px
-    background-color: lightgray
-    color: black
+    background-color: $secondary-background-color
+    color: $primary-text-color
     border-radius: 20px
-    border: 1px solid white
+    border: 1px solid $primary-background-color
     cursor: pointer
     font-weight: 500
 
+    &:hover:not(&--checked)
+      color: $primary-color
+
     &--checked
-      background: white
-      border: 1px solid lightgray
-      color: #3b82f6
+      background-color: $primary-background-color
+      border: 1px solid $secondary-background-color
 
   &__input
     display: none

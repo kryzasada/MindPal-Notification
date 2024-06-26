@@ -1,3 +1,4 @@
+@import "@styles"
 
 .notification
   position: relative
@@ -21,6 +22,10 @@
     align-items: center
     padding-right: 8px
     gap: 15px
+
+    & button
+      +xs
+        display: none
 
   &__content
     min-height: 100px
@@ -52,12 +57,12 @@
     text-align: center
     justify-content: center
     align-items: center
-    color: #007bff
+    color: $primary-color
     font-size: 14px
     font-weight: 500
 
   &__loading-icon
-    color: black
+    color: $primary-text-color
     font-size: 2rem
     animation: animate 2s infinite
     margin: 0 auto

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
+import { useLocation } from "react-router-dom"
 import CollapsiblePanel from "@components/CollapsiblePanel"
 import { selectNotificationsCount } from "@selectors/notificationsCount"
 import { setNotificationsCount } from "@actions/notificationsCount"
@@ -11,6 +12,7 @@ import "./Notification.sass"
 
 const Notification = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
 
   const dispatch = useDispatch()
   const notificationCount = useSelector(selectNotificationsCount)
@@ -23,6 +25,8 @@ const Notification = () => {
       })
       .catch(e => console.error(e))
   }, [])
+
+  useEffect(() => setIsOpen(false), [location])
 
   return (
     <div className="notification">
