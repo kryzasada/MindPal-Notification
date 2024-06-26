@@ -29,12 +29,14 @@
       "@components": ["./src/components"],
       "@styles/*": ["./src/styles/*"],
       "@pages": ["./src/pages/index.ts"],
-      "@reducers/*": ["./src/store/reducers/*"],
+      "@reducers": ["./src/store/reducers/index.ts"],
       "@selectors/*": ["./src/store/selectors/*"],
       "@store": ["./src/store/store.ts"],
       "@actions/*": ["./src/store/actions/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@layout/*": ["./src/layout/*"],
+      "@data/*": ["./src/data/*"],
+      "@api/*": ["./src/api/*"],
     }
   },
   "include": ["src"]

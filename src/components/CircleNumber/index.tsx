@@ -1,6 +1,5 @@
-import classNames from "classnames";
-import "./CircleNumber.sass"
 import cn from "classnames"
+import "./CircleNumber.sass"
 
 interface CircleNumberProps {
   number: number

@@ -1,0 +1,3 @@
+- powiadomienie nie są nigdy usuwane
+- id powiadomień nigdy się nie zmienia
+- 

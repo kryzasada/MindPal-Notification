@@ -10,12 +10,14 @@ export default defineConfig({
       '@components': resolve(__dirname, 'src/components'),
       '@styles': resolve(__dirname, 'src/styles'),
       '@pages': resolve(__dirname, 'src/pages/index.ts'),
-      '@reducers': resolve(__dirname, 'src/store/reducers'),
+      '@reducers': resolve(__dirname, 'src/store/reducers/index.ts'),
       '@selectors': resolve(__dirname, 'src/store/selectors'),
       '@store': resolve(__dirname, 'src/store/store.ts'),
       '@actions': resolve(__dirname, 'src/store/actions'),
       '@hooks': resolve(__dirname, 'src/hooks'),
       '@layout': resolve(__dirname, 'src/layout'),
+      '@data': resolve(__dirname, 'src/data'),
+      '@api': resolve(__dirname, 'src/api'),
     },
   }
 })
