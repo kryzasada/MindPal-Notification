@@ -1,5 +1,5 @@
 import { createReducer, Reducer } from '@reduxjs/toolkit'
-import { setNotifications, resetNotifications, Notification, changeReadOnNotifications, sortNotifications, changeAllReadOnNotifications } from '@actions/notifications'
+import { setNotifications, resetNotifications, Notification, setTrueReadOnNotification, sortNotifications, setTrueAllReadOnNotifications } from '@actions/notifications'
 
 interface NotificationsState {
   notifications: Notification[]
@@ -13,20 +13,20 @@ const notificationsReducer: Reducer<NotificationsState> =
   createReducer(initialState, (builder) => {
     builder
       .addCase(setNotifications, (state, action) => {
-        state.notifications = sort(state.notifications)
-        state.notifications = action.payload
+        state.notifications = sort(action.payload)
       })
       .addCase(resetNotifications, (state) => {
         state.notifications = []
       })
-      .addCase(changeReadOnNotifications, (state, action) => {
-        const notification = state.notifications.find((notification) => notification.id === action.payload)
+      .addCase(setTrueReadOnNotification, (state, action) => {
+        const notification = state.notifications.find(notification => notification.id === action.payload)
         if (notification)
           notification.read = true
         state.notifications = sort(state.notifications)
       })
-      .addCase(changeAllReadOnNotifications, (state) => {
+      .addCase(setTrueAllReadOnNotifications, (state) => {
         state.notifications.forEach(notification => notification.read = true)
+        state.notifications = sort(state.notifications)
       })
       .addCase(sortNotifications, (state) => {
         state.notifications = sort(state.notifications)

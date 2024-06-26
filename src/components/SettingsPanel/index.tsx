@@ -12,7 +12,7 @@ const SettingsPanel = ({
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleCard = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(state => !state)
   }
 
   return (
@@ -28,12 +28,9 @@ const SettingsPanel = ({
         isOpen &&
         <CollapsiblePanel>
           <>
-            {
-              title &&
-              <div className="notification-panel__title">
-                <h3>{title}</h3>
-              </div>
-            }
+            <div className="settings-panel__title">
+              <h3>{title}</h3>
+            </div>
             <div>
               {children}
             </div>

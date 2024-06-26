@@ -2,17 +2,6 @@ import { useState, ChangeEvent } from "react"
 import cn from "classnames"
 import "./RadioButton.sass"
 
-interface RadioButtonItem {
-  text: string
-  name: string
-}
-
-interface RadioButtonProps {
-  group: string
-  items: RadioButtonItem[]
-  onChange?: (value: string) => void
-}
-
 const RadioButton = ({ group, items, onChange }: RadioButtonProps) => {
   const [selectedItem, setSelectedItem] = useState<string>(() => items[0]?.name)
 
@@ -47,3 +36,14 @@ const RadioButton = ({ group, items, onChange }: RadioButtonProps) => {
 }
 
 export default RadioButton
+
+interface RadioButtonItem {
+  text: string
+  name: string
+}
+
+interface RadioButtonProps {
+  group: string
+  items: RadioButtonItem[]
+  onChange?: (value: string) => void
+}

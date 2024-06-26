@@ -1,5 +1,6 @@
 import Navbar from "@components/Navbar"
-import NotificationPanel from "@components/NotificationPanel"
+import Notification from "@components/Notification"
+import data from "@data/navigation.json"
 import "./Header.sass"
 
 const Header = () => {
@@ -7,15 +8,10 @@ const Header = () => {
     <header className="header">
       <div className="header__content">
         <Navbar items={data} />
-        <NotificationPanel />
+        <Notification />
       </div>
     </header>
   )
 }
 
 export default Header
-const data = [
-  { name: 'Home', path: '/' },
-  { name: 'Contact', path: '/contact' },
-  { name: 'About', path: '/about' }
-]

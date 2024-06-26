@@ -1,5 +1,5 @@
 import store from '@store'
-import { Notification } from '@actions/notifications'
 
-export const selectNotifications = (): Notification[] => store.getState().notifications.notifications
-export const selectUnReadNotifications = (): Notification[] => store.getState().notifications.notifications.filter(item => !item.read)
+export const selectNotifications = () => store.getState().notifications.notifications
+export const selectUnReadNotifications = () => store.getState().notifications.notifications.filter(item => !item.read)
+export const selectNotificationById = (id: number) => store.getState().notifications.notifications.find(item => item.id === id)

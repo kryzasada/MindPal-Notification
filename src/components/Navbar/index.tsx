@@ -6,7 +6,7 @@ import "./Navbar.sass"
 const Navbar = ({
   items
 }: NavbarProps) => {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
 
   return (
     <nav className="navbar">

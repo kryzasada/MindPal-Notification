@@ -12,8 +12,8 @@ interface SetNotificationsPayload extends Notification { }
 
 export const addNotifications = createAction('addNotifications')
 export const setNotifications = createAction<SetNotificationsPayload[]>('setNotifications')
-export const changeReadOnNotifications = createAction<number>('changeReadOnNotifications')
-export const changeAllReadOnNotifications = createAction('changeAllReadOnNotifications')
+export const setTrueReadOnNotification = createAction<number>('setTrueReadOnNotification')
+export const setTrueAllReadOnNotifications = createAction('setTrueAllReadOnNotifications')
 export const resetNotifications = createAction('resetNotifications')
 export const sortNotifications = createAction('sortNotification')
 

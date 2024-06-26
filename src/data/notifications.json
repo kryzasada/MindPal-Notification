@@ -8,14 +8,14 @@
       "project": "Minddev"
     },
     "timestamp": "1719357645876",
-    "read": false
+    "read": true
   },
   {
     "id": 2,
     "type": "Status change",
     "description": "We have launched new product!",
-    "timestamp": "1719317145876",
-    "read": true
+    "timestamp": "1719357645876",
+    "read": false
   },
   {
     "id": 3,
@@ -24,18 +24,19 @@
       "project": "MindTool",
       "name": "Ai Assistant"
     },
-    "timestamp": "1219357645876",
+    "timestamp": "1719301631876",
     "read": false
   },
   {
     "id": 4,
-    "type": "New feature",
+    "type": "Request",
     "description": {
-      "project": "MindTool",
-      "name": "ChatBot"
+      "user": "Maja Kowalska",
+      "company": "MindPal",
+      "project": "GraphicTeam"
     },
-    "timestamp": "1719317145876",
-    "read": true
+    "timestamp": "1718117145876",
+    "read": false
   },
   {
     "id": 5,
@@ -44,7 +45,42 @@
       "project": "MindTool",
       "name": "ChatBot"
     },
-    "timestamp": "1719317145876",
-    "read": false
+    "timestamp": "1719117145876",
+    "read": true
+  },
+  {
+    "id": 6,
+    "type": "Request",
+    "description": {
+      "user": "Kaja Nowak",
+      "company": "MindPal",
+      "project": "Test Project 123"
+    },
+    "timestamp": "1715117145876",
+    "read": true
+  },
+  {
+    "id": 7,
+    "type": "Status change",
+    "description": "We have launched new product!",
+    "timestamp": "1712117145876",
+    "read": true
+  },
+  {
+    "id": 8,
+    "type": "Status change",
+    "description": "We have launched new product!",
+    "timestamp": "1711117145876",
+    "read": true
+  },
+  {
+    "id": 9,
+    "type": "New feature",
+    "description": {
+      "project": "MindTool",
+      "name": "Ai Assistant"
+    },
+    "timestamp": "1219357645876",
+    "read": true
   }
 ]

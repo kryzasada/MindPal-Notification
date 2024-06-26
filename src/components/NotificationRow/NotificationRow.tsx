@@ -2,6 +2,7 @@ import Button from "@components/Button"
 import NotificationRowIcon from "./NotificationRowIcon"
 import cn from "classnames"
 import "./NotificationRow.sass"
+import { Link } from "react-router-dom"
 
 interface NotificationRowProps {
   id: number
@@ -22,7 +23,7 @@ const NotificationRow = ({
     onClick && onClick(id)
   }
   return (
-    <div className={cn("notification-row", { "notification-row--read": read })}>
+    <Link to={`/notification/${id}`} className={cn("notification-row", { "notification-row--read": read })}>
       <div className="notification-row__icon">
         <NotificationRowIcon type={children.props.type} />
       </div>
@@ -36,7 +37,7 @@ const NotificationRow = ({
         !read &&
         <Button text="" size="xsmall" onClick={handleClick} className="notification-row__button" />
       }
-    </div>
+    </Link>
   )
 }
 

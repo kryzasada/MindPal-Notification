@@ -3,7 +3,6 @@ import "./CollapsiblePanel.sass"
 const CollapsiblePanel = ({
   children
 }: CollapsiblePanelProps) => {
-
   return (
     <div className="collapsible-panel">
       {children}
