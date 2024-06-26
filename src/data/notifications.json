@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "type": "Request",
+    "description": {
+      "user": "Jan Nowak",
+      "company": "MindPal",
+      "project": "Minddev"
+    },
+    "timestamp": "1719357645876",
+    "read": false
+  },
+  {
+    "id": 2,
+    "type": "Status change",
+    "description": "We have launched new product!",
+    "timestamp": "1719317145876",
+    "read": true
+  },
+  {
+    "id": 3,
+    "type": "New feature",
+    "description": {
+      "project": "MindTool",
+      "name": "Ai Assistant"
+    },
+    "timestamp": "1219357645876",
+    "read": false
+  },
+  {
+    "id": 4,
+    "type": "New feature",
+    "description": {
+      "project": "MindTool",
+      "name": "ChatBot"
+    },
+    "timestamp": "1719317145876",
+    "read": true
+  },
+  {
+    "id": 5,
+    "type": "New feature",
+    "description": {
+      "project": "MindTool",
+      "name": "ChatBot"
+    },
+    "timestamp": "1719317145876",
+    "read": false
+  }
+]
